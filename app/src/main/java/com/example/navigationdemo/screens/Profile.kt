@@ -26,7 +26,7 @@ fun Profile(onClearBackStack: () -> Unit) {
             )
             Spacer(modifier = Modifier.size(30.dp))
             Button(onClick = {
-                // Пока переход не добавляем
+                onClearBackStack()
             }) {
                 Text(text = "Go Home")
             }
